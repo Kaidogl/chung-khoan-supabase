@@ -22,7 +22,12 @@ jobs:
 
     - name: Install dependencies
       run: |
+            - name: Install dependencies
+      run: |
         python -m pip install --upgrade pip
+        # 📌 Bổ sung thêm wordcloud vào cuối dòng lệnh dưới đây
+        pip install vnstock3 squarify supabase pandas wordcloud
+
         pip install vnstock3 squarify supabase pandas
 
     - name: Run python script
